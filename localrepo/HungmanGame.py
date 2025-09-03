@@ -14,6 +14,8 @@ game_over = False
 correct_letter =[]
 while not game_over:
     guess = input("Guess the letter: ").upper()
+    if guess in correct_letter:
+        print("you already guessed this letter")
 
     display="" 
     for letter in choosen_word:
